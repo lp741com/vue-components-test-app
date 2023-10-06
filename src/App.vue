@@ -3,6 +3,7 @@
     <form class="form-test" @submit="submit">
       <h1>Code input example</h1>
       <InputPin
+          class="flex-1"
           numeberOfDigits="6"
           v-model="otp"
           border-color="#9CA3AF"
@@ -41,7 +42,7 @@ const otp = ref('');
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  background-color: aquamarine;
+  background-color: rgba(240,240,240,0.4);
   min-height: 320px;
   display: flex;
   gap: 2rem;
@@ -54,6 +55,10 @@ const otp = ref('');
   font-size: 3rem;
   padding: 1rem 2rem;
   font-family: "Courier New", sans-serif;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 </style>
